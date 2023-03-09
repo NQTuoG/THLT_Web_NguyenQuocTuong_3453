@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
-using System.Web.Mvc;
 
 namespace _2011253453_NguyenQuocTuong.Models
 {
@@ -21,6 +20,5 @@ namespace _2011253453_NguyenQuocTuong.Models
         {
             return new ApplicationDbContext();
         }
-       
     }
 }

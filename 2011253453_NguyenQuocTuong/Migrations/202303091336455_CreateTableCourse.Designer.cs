@@ -13,7 +13,7 @@ namespace _2011253453_NguyenQuocTuong.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202303090600492_CreateTableCourse"; }
+            get { return "202303091336455_CreateTableCourse"; }
         }
         
         string IMigrationMetadata.Source
