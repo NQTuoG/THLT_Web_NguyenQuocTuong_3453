@@ -28,3 +28,28 @@ textarea {
     background-color: #777;
     border-color: #fff
 }
+
+.navbar-inverse {
+    background-color: #3276b0;
+    border-color: #a94442;
+}
+
+
+.course li{
+    position : relative;
+    margin-bottom : 30px;
+}
+.course .date {
+    text-align:center;
+    background-color: red;
+    color:aliceblue;
+    width:60px;
+    border-radius:8px;
+}
+.course .details {
+    position: absolute;
+    top: 0;
+    left: 70px;
+}.course ul{
+    list-style: none;
+}

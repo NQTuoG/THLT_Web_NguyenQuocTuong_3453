@@ -14,7 +14,11 @@
             CreateIndex("dbo.Courses", "CategoryId");
             AddForeignKey("dbo.Courses", "CategoryId", "dbo.Categories", "Id", cascadeDelete: true);
         }
-        
+         
+
+
+
+
         public override void Down()
         {
             DropForeignKey("dbo.Courses", "CategoryId", "dbo.Categories");
