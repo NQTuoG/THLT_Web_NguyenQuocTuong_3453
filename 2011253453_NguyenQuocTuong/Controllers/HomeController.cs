@@ -5,6 +5,10 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Data.Entity;
+using Microsoft.Ajax.Utilities;
+using static _2011253453_NguyenQuocTuong.ViewModels.CourseViewModel;
+using System.Web.ClientServices.Providers;
+using _2011253453_NguyenQuocTuong.ViewModels;
 
 namespace _2011253453_NguyenQuocTuong.Controllers
 {
@@ -23,9 +27,15 @@ namespace _2011253453_NguyenQuocTuong.Controllers
                 .Include(c => c.Category)
                 .Where(c => c.DateTime > DateTime.Now);
 
+            var viewModel = new CoursesViewModel
+            {
+                UpcommingCourses = upcommingCourses,
+                ShowAction = User.Identity.IsAuthenticated
+            };
+
             return View(upcommingCourses);
         }
-
+        
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

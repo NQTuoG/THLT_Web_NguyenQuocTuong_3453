@@ -30,10 +30,8 @@ namespace _2011253453_NguyenQuocTuong.Controllers
                 FollowerId = userId,
                 FolloweeId = followingDto.FolloweeId,
             };
-            _dbContext.Followings.Add(folowing);
-            
+            _dbContext.Followings.Add(folowing);           
             _dbContext.SaveChanges();
-
             return Ok();
         }
     }
